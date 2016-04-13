@@ -26,7 +26,7 @@ class RobotsServiceProvider extends ServiceProvider
         ]);
 
         if (! $this->app->routesAreCached()) {
-            require __DIR__.'/routing/routes.php';
+            require __DIR__.'/Http/routes.php';
         }
     }
 
