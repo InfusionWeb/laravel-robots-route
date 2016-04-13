@@ -38,7 +38,7 @@ class RobotsServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__.'/config/robots.php', 'length'
+            __DIR__.'/config/robots.php', 'robots'
         );
 
         $this->app->singleton('robots', function () {
